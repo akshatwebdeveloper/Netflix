@@ -1,0 +1,436 @@
+@font-face {
+    font-family: bd;
+    src: url(./font/NetflixSans_W_Bd.ttf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(./font/NetflixSans_W_Blk.ttf);
+}
+
+@font-face {
+    font-family: md;
+    src: url(./font/NetflixSans_W_Md.ttf);
+}
+
+@font-face {
+    font-family: rg;
+    src: url(./font/NetflixSans_W_Rg.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 1vw;
+    font-family: "blk";
+}
+
+#logo{
+    width: 15vw;
+}
+
+#button>button{
+    outline: 0;
+    color: #fff;
+    padding: 0.5vw 1vw;
+    font-size: 1.2vw;
+    border-radius: 0.3vw;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#button>#sign{
+    background-color: #E50914   ;
+    padding-bottom: 10px;
+}
+
+#button>#sign:hover{
+    background-color:#de0712;
+}
+
+
+
+
+#engbtn{
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #5E5E5E;
+}
+
+#engbtn>svg{
+    margin-right: 10px;
+}
+
+#engbtn>img{
+    margin-left: 10px;
+    width: 0.7vw;
+    height: 0.7vh;
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    margin-top: 10vw;
+    background-color: transparent;
+}
+
+#hero>h1{
+    font-size: 4vw;
+    font-family: "bold";
+    text-align: center;
+    font-weight:bold;
+
+    
+}
+
+#hero>h2{
+    font-size: 2vw;
+    margin-top: 1.6vw;
+    text-align: center;
+    font-family: "rg";
+    font-weight: 200;
+}
+
+#hero>:nth-child(3){
+    font-size: 1.6vw;
+}
+
+#hero>#herobtm{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#hero>#herobtm>input{
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #111;
+  outline: 1px solid #5E5E5E;
+
+  width: 30vw;
+  height: 8vh;
+  font-size: 1.5vw;
+  padding-left: 2vw;
+}
+
+
+
+  #hero>#herobtm>button{
+    font-weight: 200;
+    font-family: "md";
+    text-align: left;
+    padding-left: 2vw;
+    background-color: #DE0712;
+    color: #fff;
+    width: 16vw;
+    height: 4.3vw;
+    outline: 0;
+    font-size: 1.8vw;
+    border-radius: 0.6vw;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#enjoy{
+    border-top: 10px solid #232323;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#enleft{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-left: 15vw;
+}
+
+
+#enleft>h1{
+    position: absolute;
+
+    top: 30%;
+
+    font-size: 4vw;
+    font-family: "bold";
+
+}
+
+#enleft>h2{
+    position: absolute;
+    top: 47%;
+
+    font-size: 2vw;
+    font-family: "rg";
+}
+
+    
+#enright{
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+
+#enright>img{
+    left: 10%;
+    top: 15%;
+    width: 35vw;
+
+position: absolute;
+}
+
+#enright>video{
+    margin-top: 8vw;
+    top: 20%;
+    width: 25vw;
+    height: 20vw;
+    margin-left: 10vw;
+
+}
+
+
+
+   
+#enjoy2{
+    border-top: 10px solid #232323;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+    
+#enjoy2right{
+    position: relative;
+    top: 20%;
+    width: 50%;
+    height: 100%;
+
+}
+
+#enjoy2right>h1{
+    font-size: 4vw;
+    font-family: "bold";
+    padding-right: 10vw;
+}
+
+
+#enjoy2right>h2{
+    margin-top: 1vw;
+    font-size: 2vw;
+    font-family: "rg";
+    padding-right: 8vw;
+}
+
+#enjoy2left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#enjoy2left>img{
+    height: 70%;
+    padding-left: 14vw;
+}
+
+#enjoy2box{
+    position: absolute;
+    width: 20vw;
+    height: 7vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 35%;
+    left: 41%;
+    outline: 1px solid grey;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+#enjoy2box>img{
+    width: 5vw;
+    padding-left: 1vw;
+}
+
+#enjoy2box>#enjoy2text{
+    font-family: "rg";
+    margin-left: 0vw;
+    width: 2vw;
+    font-size: 0.8vw;
+    margin-right: 3vw;
+}
+
+
+
+
+#enjoyh2{
+    color: #0071EB;
+}
+
+.ri-download-line{
+    font-size: 2vw;
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+
+
+#enjoy3{
+    border-top: 10px solid #232323;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#enleft3{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-left: 15vw;
+}
+
+
+#enleft3>h1{
+    position: absolute;
+
+    top: 30%;
+
+    font-size: 3.5vw;
+    font-family: "bold";
+
+}
+
+#enleft3>h2{
+    position: absolute;
+    top: 47%;
+  font-weight: 100;
+  line-height: 2.2vw;
+    font-size: 1.6vw;
+    font-family: "rg";
+}
+
+    
+#enright3{
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+
+#enright3>img{
+    left: 10%;
+    top: 15%;
+    width: 35vw;
+
+position: absolute;
+}
+
+#enright3>video{
+    margin-top: 3.7vw;
+    top: 0%;
+    width: 22vw;
+    height: 20vw;
+    margin-left: 12vw;
+
+}
+
+
+#enjoy4{
+    border-top: 10px solid #232323;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+    
+#enjoy4right{
+    position: relative;
+    top: 20%;
+    width: 50%;
+    height: 100%;
+
+}
+
+#enjoy4right>h1{
+    font-size: 4vw;
+    font-family: "bold";
+    padding-right: 10vw;
+}
+
+
+#enjoy4right>h2{
+    margin-top: 1vw;
+    font-size: 1.6vw;
+    font-family: "rg";
+    padding-right: 8vw;
+    font-weight: 100;
+}
+
+#enjoy4left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#enjoy4left>img{
+    margin-top: 4vw;
+    height: 80%;
+    padding-left: 13vw;
+}
+
+
+
+
+
+
+
+
+
+
